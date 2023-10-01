@@ -16,4 +16,4 @@ RUN chmod +x run-chat.sh
 
 EXPOSE 8080
 # Run the Bash script to start your chatbot
-CMD ["./run-chat.sh"]
+CMD ["bash","run-chat.sh"]
