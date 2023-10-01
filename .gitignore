@@ -1,0 +1,8 @@
+Lib/
+Include/
+.chainlit/
+pyvenv.cfg
+Scripts/
+share/
+models/
+__pycache__/
