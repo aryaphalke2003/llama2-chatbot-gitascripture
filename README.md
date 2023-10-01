@@ -48,6 +48,10 @@ Trained specifically to answer queries based on Bhagavad Gita!
     docker build -t chatbot-image .
     docker run chatbot-image 
     ```
+  - Pull my docker repo:
+   ```shell
+   docker pull aryax9/chatbot-llama2-gitascript:latest
+   ```
     <br>
   
   
