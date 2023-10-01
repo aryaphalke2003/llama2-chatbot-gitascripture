@@ -44,11 +44,16 @@ docker run chatbot-image
 
 # Kubernetes
 
+Download kubectl cli & start a cluster
 
-1. kubectl cli download
-2. kubectl apply -f deployment.yaml
-3. kubectl apply -f service.yaml
+Run the following commands to get manifest files:
 
-# 
+```
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
+ 
+# Llama 😊
+
 <img src="./images/img.png" width="480">
 
