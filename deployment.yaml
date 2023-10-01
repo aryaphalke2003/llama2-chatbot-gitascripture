@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chatbot-app
+  name: chatbot-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: chatbot
+      app: webserver
   template:
     metadata:
       labels:
-        app: chatbot
+        app: webserver
     spec:
       containers:
-        - name: chatbot
-          image: chatbot-image
+        - name: webdev
+          image: docker.io/library/sushil3710/gitachatbot:v1
           ports:
-            - containerPort: 8080
+            - containerPort: 8051

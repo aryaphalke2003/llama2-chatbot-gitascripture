@@ -53,6 +53,12 @@ Run the following commands to get manifest files:
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
+
+To see the deployed pods:
+```
+kubectl get deploy -o wide
+kubectl get pod -o wide
+```
  
 # Llama 😊
 
