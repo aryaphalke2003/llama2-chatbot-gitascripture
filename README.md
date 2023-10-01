@@ -1,17 +1,18 @@
 # GitaScript Chatbot 🤖
 
 Trained specifically to answer queries based on Bhagavad Gita!
+<br><br>
 
 ## Steps to Run
 
 - **Git Clone and Create Models Folder:**
-  - Clone this repository and create a "models" folder.
+  - Clone this repository and create a "models" folder.<br>
 
 - **Download the LLAMA Model:**
-  - Download TheBloke's fine-tuned Llama2 model [LLAMA](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q8_0.bin).
+  - Download TheBloke's fine-tuned Llama2 model and place it in models folder created [LLAMA](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q8_0.bin).<br>
 
 - **Add PDFs for Model Training:**
-  - Place your PDF files in the "pdf" folder to train the model.
+  - Place your PDF files in the "pdf" folder to train the model.<br>
 
 - **Activate Python Environment:**
   - Create and activate a Python virtual environment:
@@ -37,16 +38,19 @@ Trained specifically to answer queries based on Bhagavad Gita!
     ```shell
     chainlit run main.py -w
     ```
+    <br>
 
 ## Docker 
 
-- **Create Docker Image Locally:**
+- **Create Docker Image Locally:**<br><br>
   - Build a Docker image locally with the following commands:
     ```shell
     docker build -t chatbot-image .
     docker run chatbot-image 
     ```
-
+    <br>
+  
+  
 ## Kubernetes
 
 - **Download kubectl CLI and Set Up a Cluster:**
@@ -65,16 +69,18 @@ Trained specifically to answer queries based on Bhagavad Gita!
     kubectl get deploy -o wide
     kubectl get pod -o wide
     ```
+    <br>
 
-## Llama 😊
+## Welcome Page:
+
+<img src="./screenshots/wlc.png" width="680">
+<br>
+
+## Chatbot Response:
+
+<img src="./screenshots/cht.png" width="680">
+<br>
+
+## Llama 
 
 ![Llama Image](./images/img.png)
-
-
-### Welcome Page
-
-
-###### Image of the hardware setup:
-
-<img src="./screenshots/wlc.png" width="480">
-
