@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatbot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitascript-chatbot
+  template:
+    metadata:
+      labels:
+        app: gitascript-chatbot
+    spec:
+      containers:
+        - name: chatbot
+          image: chatbot-image
+          ports:
+            - containerPort: 8080

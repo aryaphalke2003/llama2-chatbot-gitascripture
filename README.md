@@ -1,66 +1,71 @@
 # GitaScript Chatbot 🤖
 
-Trained specifically to answer queries based on bhagvad gita!
+Trained specifically to answer queries based on Bhagavad Gita!
 
-# Steps to run
+## Steps to Run
 
-1. Git clone this repo & create a models folder
+- **Git Clone and Create Models Folder:**
+  - Clone this repository and create a "models" folder.
 
-2. Download the model currently used TheBloke's finetuned llama2 model [LLAMA](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q8_0.bin)
+- **Download the LLAMA Model:**
+  - Download TheBloke's fine-tuned Llama2 model [LLAMA](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q8_0.bin).
 
-3. Place your pdfs in pdf folder to train the model
+- **Add PDFs for Model Training:**
+  - Place your PDF files in the "pdf" folder to train the model.
 
-4. Activate python environment
-```
-python -m venv .
-Scripts/activate
-```
+- **Activate Python Environment:**
+  - Create and activate a Python virtual environment:
+    ```shell
+    python -m venv .
+    Scripts/activate
+    ```
 
-5. Install all requirements
+- **Install Required Packages:**
+  - Install all required Python packages:
+    ```shell
+    pip install -r requirements.txt
+    ```
 
-```
-pip install -r requirements.txt
-```
+- **Run PDF Conversion:**
+  - Execute the following command to read your PDFs and store them:
+    ```python
+    python convert.py
+    ```
 
-6. Run this command to read your pdfs and store them
+- **Run Chatbot with Chainlit:**
+  - After the conversion is complete, run the chatbot using Chainlit:
+    ```shell
+    chainlit run main.py -w
+    ```
 
-```Python
-python convert.py
-```
+## Docker 
 
-7. After completion run chainlit
+- **Create Docker Image Locally:**
+  - Build a Docker image locally with the following commands:
+    ```shell
+    docker build -t chatbot-image .
+    docker run chatbot-image 
+    ```
 
-```
-chainlit run main.py -w
-```
+## Kubernetes
 
-# Docker 
+- **Download kubectl CLI and Set Up a Cluster:**
+  - Download the kubectl command-line interface (CLI) and set up a Kubernetes cluster.
 
-Creating image locally
+- **Apply Kubernetes Manifests:**
+  - Run the following commands to apply Kubernetes manifest files:
+    ```shell
+    kubectl apply -f deployment.yaml
+    kubectl apply -f service.yaml
+    ```
 
-```
-docker build -t chatbot-image .
-docker run chatbot-image 
-```
+- **Check Deployed Pods:**
+  - To see the deployed pods, use the following commands:
+    ```shell
+    kubectl get deploy -o wide
+    kubectl get pod -o wide
+    ```
 
-# Kubernetes
+## Llama 😊
 
-Download kubectl cli & start a cluster
-
-Run the following commands to get manifest files:
-
-```
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-```
-
-To see the deployed pods:
-```
-kubectl get deploy -o wide
-kubectl get pod -o wide
-```
- 
-# Llama 😊
-
-<img src="./images/img.png" width="480">
-
+![Llama Image](./images/img.png)
