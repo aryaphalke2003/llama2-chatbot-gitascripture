@@ -69,3 +69,12 @@ Trained specifically to answer queries based on Bhagavad Gita!
 ## Llama 😊
 
 ![Llama Image](./images/img.png)
+
+
+### Welcome Page
+
+
+###### Image of the hardware setup:
+
+<img src="./screenshots/wlc.png" width="480">
+
