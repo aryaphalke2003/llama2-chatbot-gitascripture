@@ -1,4 +1,4 @@
-# llama2-chatbot-gitascripture
+# GitaScript Chatbot
 Trained specifically to answer queries based on bhagvad gita!
 
 # Steps to run
@@ -43,6 +43,7 @@ docker run chatbot-image
 ```
 
 # Kubernetes
+
 
 1. kubectl cli download
 2. kubectl apply -f deployment.yaml
