@@ -1,4 +1,5 @@
-# GitaScript Chatbot
+# GitaScript Chatbot 💬
+
 Trained specifically to answer queries based on bhagvad gita!
 
 # Steps to run
