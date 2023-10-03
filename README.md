@@ -63,8 +63,8 @@ Trained specifically to answer queries based on Bhagavad Gita!
 - **Apply Kubernetes Manifests:**
   - Run the following commands to apply Kubernetes manifest files:
     ```shell
-    kubectl apply -f deployment.yaml
-    kubectl apply -f service.yaml
+    kubectl apply -f ./manifest-files/deployment.yaml
+    kubectl apply -f ./manifest-files/service.yaml
     ```
 
 - **Check Deployed Pods:**

@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chatbot
+  name: gitascript-chatbot
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: gitascript-chatbot
     spec:
       containers:
-        - name: chatbot
-          image: chatbot-image
+        - name: gchatbot
+          image: aryax9/chatbot-llama2-gitascript:latest
           ports:
             - containerPort: 8080
