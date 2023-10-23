@@ -3,6 +3,10 @@
 Trained specifically to answer queries based on Bhagavad Gita!
 <br><br>
 
+## Llama 
+
+![Llama Image](./images/img.png)
+
 ## Steps to Run
 
 - **Git Clone and Create Models Folder:**
@@ -85,6 +89,4 @@ Trained specifically to answer queries based on Bhagavad Gita!
 <img src="./screenshots/cht.png" width="680">
 <br>
 
-## Llama 
 
-![Llama Image](./images/img.png)
